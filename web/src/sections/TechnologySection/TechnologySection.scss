@@ -1,0 +1,22 @@
+@keyframes rotateCard {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.card_technolgy:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+  animation: rotateCard 1s 0s 1 linear;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}

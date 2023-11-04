@@ -11,7 +11,7 @@ export const HeroSection = ({
   _rawSubText,
   button,
 }) => {
-  const heroSectionClasses = clsx(otherClasses, 'w-full my-20 bg-[#025286]')
+  const heroSectionClasses = clsx(otherClasses, 'w-full mt-20 bg-[#D7A172]')
 
   return (
     <section className={heroSectionClasses} data-testid="hero-section">
@@ -21,10 +21,8 @@ export const HeroSection = ({
           richText={_rawSubText}
           otherClasses="richtext_para flex flex-col gap-10  "
         />
-        <Button
-          {...button}
-          otherClasses="w-fit rounded-xl mx-auto hover:opacity-90"
-        />
+        <Button {...button} otherClasses="w-fit mx-auto mt-5 mb-10" />
+        <div className="h-[1px] w-full bg-[#ffffff] opacity-75 "></div>
       </div>
     </section>
   )

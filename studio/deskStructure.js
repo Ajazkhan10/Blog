@@ -3,6 +3,10 @@ const BLOG_SITE_SECTIONS = [
     sectionType: 'heroSections',
     sectionTitle: 'Hero Sections',
   },
+  {
+    sectionType: 'technolgySection',
+    sectionTitle: 'Technolgy Section',
+  },
 
 ]
 

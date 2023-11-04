@@ -1,11 +1,21 @@
-.primary_button {
-  background: #d7a172;
+// .primary_button {
+//   background: #e5ff00;
+//   color: black;
+// }
+.button_primary_box_shadow {
+  box-shadow: 0px 1px 2px #d7a172;
+  &:hover {
+    box-shadow: 0px 1px 50px #cbe00e;
+  }
+  &:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+  }
 }
-
 .secondary_button {
   background: #424242;
 }
 
 .fill-white {
-  background: #ffffff,
+  background: #ffffff;
 }

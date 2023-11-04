@@ -18,7 +18,7 @@ export const Button = ({
   const buttonClasses = clsx(
     otherClasses,
     variant === 'primary' &&
-      `px-8 py-3 primary_button text-base font-Montserrat font-medium text-white leading-6 uppercase`,
+      `px-6 py-5  flex gap-2 w-fit justify-center items-center  text-[20px] leading-[18.9px] text-center font-bold  font-serif bg-[#e5ff00] rounded-full button_primary_box_shadow`,
     variant === 'secondary' &&
       `px-8 py-3 secondary_button text-base font-Montserrat font-medium text-white leading-6 uppercase`,
     variant === 'fill-white' &&

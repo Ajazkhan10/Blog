@@ -54,6 +54,16 @@ export default {
           },
           to: [{ type: 'heroSections' }],
         },
+        {
+          title: 'Technolgy Section',
+          name: 'technolgySection',
+          type: 'reference',
+          validation: (Rule) => Rule.required(),
+          options: {
+            disableNew: true,
+          },
+          to: [{ type: 'technolgySection' }],
+        },
 
       ],
     },
