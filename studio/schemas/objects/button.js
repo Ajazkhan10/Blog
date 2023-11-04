@@ -23,10 +23,10 @@ export default {
         Rule.custom((variant) => (variant === undefined ? 'This field must not be empty.' : true)),
       options: {
         list: [
-          {title: 'Primary', value: 'primary'},
-          {title: 'Secondary', value: 'secondary'},
-          {title: 'Tertiary', value: 'tertiary'},
-          {title: 'Text Link', value: 'textLink'},
+          { title: 'Primary', value: 'primary' },
+          { title: 'Secondary', value: 'secondary' },
+          { title: 'Tertiary', value: 'tertiary' },
+          { title: 'Text Link', value: 'textLink' },
         ],
       },
     },
@@ -34,8 +34,7 @@ export default {
       title: 'Action',
       name: 'action',
       type: 'string',
-      validation: (Rule) =>
-        Rule.custom((variant) => (variant === undefined ? 'This field must not be empty.' : true)),
+
       options: {
         list: ['link', 'form'],
       },
@@ -58,14 +57,14 @@ export default {
       //     return true
       //   }),
       // validation: (Rule) => Rule.required().custom((_, { parent }) => parent.action === "link" && false),
-      hidden: ({parent}) => !parent?.action || parent?.action === 'form',
+      hidden: ({ parent }) => !parent?.action || parent?.action === 'form',
     },
     {
       title: 'Form',
       name: 'form',
       type: 'string',
       options: {
-        list: [ {title: 'Contact Us', value: 'contact-us'},],
+        list: [{ title: 'Contact Us', value: 'contact-us' },],
       },
       // validation: (Rule) =>
       //   Rule.custom((form, {parent}) => {
@@ -74,7 +73,7 @@ export default {
       //     }
       //     return true
       //   }),
-      hidden: ({parent}) => !parent?.action || parent?.action === 'link',
+      hidden: ({ parent }) => !parent?.action || parent?.action === 'link',
     },
   ],
   preview: {
@@ -82,7 +81,7 @@ export default {
       label: 'label',
       slug: 'slug',
     },
-    prepare({label = 'No Label', slug = {}}) {
+    prepare({ label = 'No Label', slug = {} }) {
       return {
         title: label,
         slug: `/${slug.current}/`,

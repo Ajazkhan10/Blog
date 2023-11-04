@@ -9,9 +9,9 @@ export default {
       type: 'string',
     },
     {
-      title: 'Main Heading',
-      name: 'mainHeading',
-      type: 'string',
+      title: 'Text',
+      name: 'text',
+      type: 'bodyPortableText',
     },
     {
       title: 'Sub Text',
@@ -20,12 +20,11 @@ export default {
       validation: (Rule) => Rule.required(),
     },
     {
-      title: 'Background Image',
-      name: 'backgroundImage',
-      type: 'customImage',
-      validation: (Rule) => Rule.required(),
+      title: 'Button',
+      name: 'button',
+      type: 'button',
+      of: [{ type: 'button' }]
     },
-
   ],
   preview: {
     select: {

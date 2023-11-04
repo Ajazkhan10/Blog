@@ -1,5 +1,87 @@
-.richtext_para > p {
-  color: white !important;
-  font-size: 16px;
-  font-weight: 500;
+// .bg_style {
+//   background: rgb(165, 90, 90);
+//   animation: color-me-in 5s;
+//   @keyframes color-me-in {
+//     0% {
+//       background: orange;
+//     }
+//     /* Adding a step in the middle */
+//     50% {
+//       background: blue;
+//     }
+//     100% {
+//       background: black;
+//     }
+//   }
+// }
+// .richtext_para > p {
+//   color: white !important;
+//   font-size: 24px;
+//   font-weight: 400;
+//   animation-duration: 3s;
+//   animation-name: slidein;
+//   @keyframes slidein {
+//     from {
+//       margin-top: 100%;
+//       height: 300%;
+//     }
+
+//     to {
+//       margin-top: 0%;
+//       height: 100%;
+//     }
+//   }
+// }
+
+// .richtext_Heading {
+//   h4 {
+//     animation: 1s ease infinite pulse;
+//     @keyframes pulse {
+//       0% {
+//         background: yellow;
+//         transform: scale(1);
+//       }
+
+//       25% {
+//         background: darken(red, 10%);
+//         transform: scale(1.015);
+//       }
+
+//       50% {
+//         background: green;
+//         transform: scale(1);
+//       }
+//     }
+//   }
+// }
+
+.richtext_Heading {
+  h4 {
+    color: rgb(0, 0, 0);
+    font-family: Lora;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+.richtext_para {
+  p {
+    color: #000000;
+    font-family: Lora;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.7;
+  }
+  h5 {
+    color: rgb(0, 0, 0);
+    font-family: Lora;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    opacity: 0.8;
+  }
 }

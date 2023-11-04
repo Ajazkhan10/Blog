@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 import clsx from 'clsx'
 import './navbar.scss'
-import Heading from '../Heading/Heading'
-import Icon from '../Icon/Icon'
+// import Heading from '../Heading/Heading'
+// import Icon from '../Icon/Icon'
 
 export const Navbar = ({ otherClasses, toggleFunc }) => {
   const navbarClasses = clsx(
@@ -10,19 +10,19 @@ export const Navbar = ({ otherClasses, toggleFunc }) => {
     'w-full fixed top-0 left-0 z-20  lg:px-[70px] px-4 '
   )
 
-  const [active, setActive] = useState(false)
+  // const [active, setActive] = useState(false)
 
-  const handleToggle = () => {
-    if (active) {
-      setActive(false)
-    } else {
-      setActive(true)
-    }
-  }
+  // const handleToggle = () => {
+  //   if (active) {
+  //     setActive(false)
+  //   } else {
+  //     setActive(true)
+  //   }
+  // }
 
   return (
     <nav className={navbarClasses} id="navbar" data-testid="navbar">
-      <Heading type="h4" otherClasses="mt-[25px] text-white">
+      {/* <Heading type="h4" otherClasses="mt-[25px] text-white">
         Shakseyat
       </Heading>
       <input type="checkbox" id="active" onClick={handleToggle} className="" />
@@ -60,7 +60,7 @@ export const Navbar = ({ otherClasses, toggleFunc }) => {
             <a href="#">Feedback</a>
           </li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   )
 }

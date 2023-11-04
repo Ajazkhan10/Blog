@@ -6,7 +6,7 @@ import Seo from '../components/seo'
 
 const IndexPage = (props) => {
   return (
-    <Layout isCtaEnabled={true}>
+    <Layout isCtaEnabled={true} >
       <EntryRenderer pageBuilderData={props.data.page.pageBuilder} />
     </Layout>
   )

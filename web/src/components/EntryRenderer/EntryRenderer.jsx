@@ -7,7 +7,6 @@ export const EntryRenderer = ({ pageBuilderData, ...props }) => {
     switch (__typename) {
       case 'SanityHeroSections':
         return <HeroSection key={__typename} {...sectionData} {...props} />
-
       default:
         return null
     }
