@@ -7,7 +7,10 @@ const BLOG_SITE_SECTIONS = [
     sectionType: 'technolgySection',
     sectionTitle: 'Technolgy Section',
   },
-
+  {
+    sectionType: 'whyUsSection',
+    sectionTitle: 'Why Us Section',
+  },
 ]
 
 const BLOG_SITE_TEMPLATE = [

@@ -13,6 +13,11 @@ export default {
             name: 'image',
             type: 'customImage',
         },
+        {
+            title: 'Technology URL',
+            name: 'technologyUrl',
+            type: 'url',
+        },
     ],
     preview: {
         select: {

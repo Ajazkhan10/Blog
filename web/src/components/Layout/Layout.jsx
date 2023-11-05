@@ -4,7 +4,7 @@ import Navbar from '../Navbar/Navbar'
 // import Cta from '../Cta/Cta'
 // import ContactForm from '../ContactForm/ContactForm'
 
-import clsx from 'clsx'
+// import clsx from 'clsx'
 
 export const Layout = ({ children, isCtaEnabled }) => {
   const [toggle, setToggle] = useState()

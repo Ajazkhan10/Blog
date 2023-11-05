@@ -28,6 +28,7 @@ export const query = graphql`
       pageBuilder {
         ...HeroSections
         ...TechnologySections
+        ...WhyUsSection
       }
     }
   }

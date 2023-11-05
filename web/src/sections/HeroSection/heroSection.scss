@@ -58,7 +58,7 @@
 .richtext_Heading {
   h4 {
     color: rgb(0, 0, 0);
-    font-family: Lora;
+    font-family: sans-serif;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -76,12 +76,31 @@
     opacity: 0.7;
   }
   h5 {
-    color: rgb(0, 0, 0);
+    color: #d7a172;
     font-family: Lora;
-    font-size: 36px;
+    font-size: 24px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: normal;
     opacity: 0.8;
+    max-width: 600px;
+    margin: auto;
+    animation: headingfadin 2s 0s infinite linear;
+  }
+  @keyframes headingfadin {
+    0% {
+      opacity: 0;
+      color: rgb(0, 255, 170);
+    }
+    25% {
+      color: #ff7700;
+    }
+    50% {
+      color: rgb(0, 89, 255);
+    }
+    100% {
+      opacity: 1;
+      color: rgb(123, 255, 0);
+    }
   }
 }

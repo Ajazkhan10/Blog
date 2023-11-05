@@ -64,6 +64,16 @@ export default {
           },
           to: [{ type: 'technolgySection' }],
         },
+        {
+          title: 'Why Us Section',
+          name: 'whyUsSection',
+          type: 'reference',
+          validation: (Rule) => Rule.required(),
+          options: {
+            disableNew: true,
+          },
+          to: [{ type: 'whyUsSection' }],
+        },
 
       ],
     },

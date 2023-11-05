@@ -8,7 +8,10 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 export const TechnologySection = ({ otherClasses, heading, cards }) => {
-  const technologySectionClasses = clsx(otherClasses, 'w-full bg-[#D7A172]')
+  const technologySectionClasses = clsx(
+    otherClasses,
+    'w-full bg-[#D7A172] bg-opacity-25'
+  )
   const settings = {
     dots: false,
     infinite: true,
@@ -69,7 +72,7 @@ export const TechnologySection = ({ otherClasses, heading, cards }) => {
               >
                 <Image
                   imageData={image}
-                  otherClasses="w-full lg:w-[100px] lg:h-[100px] object-cover cursor-pointer mix-blend-color-burn"
+                  otherClasses="w-full lg:w-[100px] lg:h-[100px] object-cover cursor-pointer !mix-blend-color-burn"
                 />
               </div>
             )
