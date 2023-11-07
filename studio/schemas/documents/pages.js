@@ -74,7 +74,16 @@ export default {
           },
           to: [{ type: 'whyUsSection' }],
         },
-
+        {
+          title: 'Testimonials Section',
+          name: 'testimonialsSection',
+          type: 'reference',
+          validation: (Rule) => Rule.required(),
+          options: {
+            disableNew: true,
+          },
+          to: [{ type: 'testimonialsSection' }],
+        },
       ],
     },
   ],

@@ -72,7 +72,8 @@ export const TechnologySection = ({ otherClasses, heading, cards }) => {
               >
                 <Image
                   imageData={image}
-                  otherClasses="w-full lg:w-[100px] lg:h-[100px] object-cover cursor-pointer !mix-blend-color-burn"
+                  object
+                  otherClasses="w-full lg:w-[100px]  lg:h-[100px] object-cover cursor-pointer !mix-blend-color-burn"
                 />
               </div>
             )
